@@ -37,8 +37,10 @@ results2 = [fecha, hora, isp, ping, down, up, pack]
 
 print(results2)
 
-# Escribor el log
+# Escribir el log
 
 with open('%s.csv' % dia,'a',newline='') as out:
     writer = csv.writer(out, delimiter='\t')
     writer.writerow(results2)
+
+# Realizado por los hermanos Facundo Y Juan Redon.
